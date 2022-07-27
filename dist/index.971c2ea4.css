@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Gilroy), url("Gilroy-Regular.433d4bd6.woff2") format("woff2"), url("Gilroy-Regular.5ec48757.woff") format("woff");
+}
+
+@font-face {
+  font-family: Gilroy Semibold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Gilroy Semibold), url("Gilroy-Semibold.fe84a725.woff2") format("woff2"), url("Gilroy-Semibold.664757c2.woff") format("woff");
+}
+
+body {
+  color: #1f3f68;
+  font-family: Gilroy, serif;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
