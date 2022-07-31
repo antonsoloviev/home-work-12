@@ -16,7 +16,6 @@ html, body {
   height: 100%;
   color: #1f3f68;
   font-family: Gilroy, serif;
-  font-size: 1.6rem;
 }
 
 .wrapper {
@@ -79,9 +78,9 @@ html, body {
   color: #316099;
   z-index: 3;
   font-family: Gilroy Semibold;
-  font-size: 1rem;
+  font-size: 2rem;
   position: absolute;
-  transform: translateX(24px)translateY(-1px);
+  transform: translateX(26px)translateY(-1px);
 }
 
 .header-container .logo:hover {
@@ -318,6 +317,152 @@ html, body {
 @media screen and (max-width: 1024px) {
   .see-our-project-container {
     padding-left: 15px;
+  }
+}
+
+.what-we-do {
+  background-color: #fff;
+}
+
+.what-we-do .container {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 180px;
+  display: flex;
+}
+
+.what-we-do .container .grid-wrapper {
+  grid-template-columns: 80px 1fr 1fr;
+  grid-template-areas: "A A B"
+                       ". C B"
+                       ". C D"
+                       ". . D";
+  gap: 50px;
+  display: grid;
+}
+
+.what-we-do .container .grid-wrapper .title {
+  letter-spacing: 1.6px;
+  max-width: 360px;
+  grid-area: A;
+  margin-bottom: 30px;
+  font-size: 3.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .what-we-do .container .grid-wrapper .title {
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .what-we-do .container .grid-wrapper .title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .what-we-do .container .grid-wrapper .title {
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+  }
+}
+
+.what-we-do .container .grid-wrapper .card {
+  width: 380px;
+  max-height: 525px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 48px;
+  display: flex;
+  box-shadow: 5px 20px 50px #1070b133;
+}
+
+.what-we-do .container .grid-wrapper .card__img {
+  margin-bottom: 50px;
+}
+
+.what-we-do .container .grid-wrapper .card__title {
+  text-align: left;
+  max-height: 60px;
+  margin-bottom: 16px;
+  font-family: Gilroy Semibold, serif;
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.what-we-do .container .grid-wrapper .card__text {
+  text-align: left;
+  opacity: .6;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+.what-we-do .container .grid-wrapper .card__learn-more {
+  color: #5a98d0;
+  align-self: flex-start;
+  align-items: center;
+  font-family: Gilroy Semibold, serif;
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.what-we-do .container .grid-wrapper .card__learn-more img {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .what-we-do .container .grid-wrapper .card {
+    width: 300px;
+    padding: 8px;
+  }
+}
+
+.what-we-do .container .grid-wrapper .card-1 {
+  grid-area: B;
+}
+
+.what-we-do .container .grid-wrapper .card-2 {
+  grid-area: C;
+}
+
+.what-we-do .container .grid-wrapper .card-3 {
+  grid-area: D;
+}
+
+@media screen and (max-width: 1024px) {
+  .what-we-do .container .grid-wrapper {
+    grid-template-columns: 15px 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .what-we-do .container .grid-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .what-we-do .container {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .what-we-do .container {
+    padding-top: 40px;
   }
 }
 
