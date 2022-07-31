@@ -170,7 +170,12 @@ body {
       .close-icon-menu::after{
         transform: rotate(-38deg);
       }
-
+    
+      @media screen and (max-width: 1024px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      
   }
 }
 
@@ -358,8 +363,8 @@ body {
         max-width: 360px;
 
         @media screen and (max-width: 1024px) {
-          font-size: 3rem;
-          justify-self: center;
+          // font-size: 3rem;
+          justify-self: flex-start;
           margin-top: 40px;
         }
 
@@ -416,9 +421,19 @@ body {
           align-self: flex-start;
           font-size: 1.4rem;
           color: #5A98D0;
-  
+          cursor: pointer;
+          position: relative;
+
           img {
             margin-left: 20px;
+            transition: transform 0.3s ease 0s;
+          }
+        }
+        // need to add  animation
+        &__learn-more:hover {
+          opacity: 0.8;
+          img {
+          transform: translateX(20px);
           }
         }
 
@@ -444,7 +459,13 @@ body {
       }
 
       @media screen and (max-width: 1024px) {
-        grid-template-columns: 15px 1fr 1fr;
+        grid-template-columns: 150px 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 0px 1fr 1fr;
       }
 
       @media screen and (max-width: 767.98px) {
@@ -464,15 +485,117 @@ body {
     @media screen and (max-width: 1200px) {
       padding-top: 80px;
     }
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     @media screen and (max-width: 767.98px) {
       padding-top: 40px;
     }
   }
 
-  
-
 }
 
+/* what-we-do end*/
+
+/* projects start*/
+.projects {
+  background-color: #fff;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 180px;
+
+    .section-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 96px;
+
+      h2 {
+        display: flex;
+        font-family: 'Gilroy Semibold', serif;
+        font-size: 3.6rem;
+        max-height: 92px;
+        max-width: 225px;
+
+        @media screen and (max-width: 767.98px) {
+          text-align: center;
+          font-size: 2.8rem;
+          margin-bottom: 40px;
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+        opacity: 0.6;
+        margin-left: 60px;
+        max-height: 92px;
+        max-width: 520px;
+
+        @media screen and (max-width: 1024px) {
+          max-width: 425px;
+        }
+
+        @media screen and (max-width: 767.98px) {
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 60px;
+      }
+
+      @media screen and (max-width: 767.98px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    .projects-big-card {
+      display: flex;
+      margin-bottom: 96px;
+
+      img {
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 40px;
+
+      }
+    }
+
+    .projects-card-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        gap: 40px;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 80px;
+    }
+  }
+
+}
+/* projects end*/
 
 
 
