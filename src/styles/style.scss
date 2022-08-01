@@ -48,6 +48,8 @@ body {
   letter-spacing: 0.5px;
   cursor: pointer;
   margin-bottom: 30px;
+  transition: letter-spacing 0.3s ease 0s;
+  
 
   @media screen and (max-width: 375px) {
     width: 176px;
@@ -57,6 +59,7 @@ body {
 
 .button:hover {
   opacity: 0.8;
+  letter-spacing: 0.1rem;
 }
 /* COMMON end */
 
@@ -178,7 +181,7 @@ body {
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
-              z-index: 10;
+              // z-index: 10;
             }
           }
 
@@ -193,6 +196,7 @@ body {
           background-color: #FFF;
           padding: 90px 15px 30px 15px;
           justify-content: center;
+          z-index: 10;
           // transition: left 0.3s ease 0s;
           }
 
@@ -1001,6 +1005,7 @@ body {
             }
           }
 
+
           &__e-mail {
             display: flex;
             gap: 16px;
@@ -1018,6 +1023,11 @@ body {
             a {
               color: inherit;
             }
+          }
+
+          &__tel:hover,
+          &__e-mail:hover {
+            text-decoration: underline;
           }
 
           @media screen and (max-width: 767.98px) {
@@ -1050,6 +1060,11 @@ body {
             margin-bottom: 16px;
           }
 
+         a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+          }
+
           @media screen and (max-width: 767.98px) {
             margin-left: 0;
             flex-direction: column;
@@ -1080,6 +1095,23 @@ body {
           
           a {
             margin-bottom: 16px;
+            position: relative;
+            display: flex;
+            gap: 15px;
+          }
+
+          figcaption {
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+          }
+
+          a:hover figcaption {
+            opacity: 0.8;
           }
 
           @media screen and (max-width: 767.98px) {
