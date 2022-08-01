@@ -52,7 +52,7 @@ html, body {
   padding-right: 25px;
   font-family: inherit;
   font-size: 16px;
-  transition: letter-spacing .3s;
+  transition: letter-spacing .3s, opacity .5s;
 }
 
 @media screen and (max-width: 375px) {

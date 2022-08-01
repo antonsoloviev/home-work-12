@@ -48,8 +48,9 @@ body {
   letter-spacing: 0.5px;
   cursor: pointer;
   margin-bottom: 30px;
-  transition: letter-spacing 0.3s ease 0s;
-  
+  transition: letter-spacing 0.3s ease 0s, opacity 0.5s ease 0s;
+
+
 
   @media screen and (max-width: 375px) {
     width: 176px;
