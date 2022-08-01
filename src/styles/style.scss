@@ -1,9 +1,11 @@
-/* COMMON start */
+/* IMPORT */
 @import 'fonts.scss';
 
 @import 'variables.scss';
 
 @import 'mixins.scss';
+
+/* COMMON start */
 
 html,
 body {
@@ -122,34 +124,76 @@ body {
 
       .header-menu{
         display: flex;
+        // flex-direction: column;
 
         .menu__body{
-          position: fixed;
-          top: 0;
-          left: -100%;
+          // // position: fixed;
+          // top: 0;
+          // left: -100%;
+          // width: 100%;
+          // overflow: auto;
+          // height: 100%;
+          // background-color: #FFF;
+          // padding: 90px 15px 30px 15px;
+          // transition: left 0.3s ease 0s;
+
+          display: none;
           width: 100%;
           overflow: auto;
-          // height: 100%;
           background-color: #FFF;
-          padding: 90px 15px 30px 15px;
           transition: left 0.3s ease 0s;
 
-
           .menu__list {
+
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
+            gap: 40px;
 
             .menu__item{
+              font-family:'Gilroy Semibold', serif;
+              font-size: 2rem;
+              letter-spacing: 0.05rem;
 
-              font-size: 1rem;
               .menu__link:hover{
                 text-decoration: underline;
               }
 
+              @media screen and (max-width: 1024px) {
+                letter-spacing: normal;
+              }
+
+              @media screen and (max-width: 819px) {
+                font-size: 2.4rem;
+              }
+
+            }
+
+            @media screen and (max-width: 1024px) {
+              gap: 24px;
+            }
+
+            @media screen and (max-width: 819px) {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
             }
           }
+
+
+          @media screen and (max-width: 819px) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          overflow: auto;
+          height: 100%;
+          background-color: #FFF;
+          padding: 90px 15px 30px 15px;
+          // transition: left 0.3s ease 0s;
+          }
+
         }
 
        
@@ -188,15 +232,19 @@ body {
         content: "";
         background-color: #EB5757;
         height: 2px;
-        transform-origin: 0 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        // transform-origin: 0 0;
       }
 
       .close-icon-menu::before{
-        transform: rotate(34deg);
+        transform: rotate(45deg);
       }
 
       .close-icon-menu::after{
-        transform: rotate(-38deg);
+        transform: rotate(-45deg);
       }
     
       @media screen and (max-width: 1024px) {
@@ -208,19 +256,25 @@ body {
 }
 
 .header:target .menu__body{
-  left: 0;
+  display: flex;
+  
+  // @media screen and (max-width: 819px) {
+  //   // left: 0;
+  // }
 }
 
-.header:target .menu__body:before{
+.header:target .menu__body:before {
+
+  @media screen and (max-width: 819px) {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 90px;
   width: 100%;
   background-color: #fff;
+  }
 }
-
 
 .header:target .icon-menu{
   display: none;
@@ -230,9 +284,9 @@ body {
   display: flex;
 }
 
-/* header end*/
+/* header end */
 
-/* see-our-project start*/
+/* see-our-project start */
 
 .see-our-project {
   background: linear-gradient(0deg, #98C3E8 10.84%, rgba(152, 195, 232, 0.1) 31.12%);
@@ -332,9 +386,9 @@ body {
   }
   
 } 
-/* see-our-project end*/
+/* see-our-project end */
 
-/* what-we-do start*/
+/* what-we-do start */
 
 .what-we-do {
   background-color: #fff;
@@ -502,9 +556,9 @@ body {
 
 }
 
-/* what-we-do end*/
+/* what-we-do end */
 
-/* projects start*/
+/* projects start */
 .projects {
   background-color: #fff;
 
@@ -601,9 +655,9 @@ body {
   }
 
 }
-/* projects end*/
+/* projects end */
 
-/* clients start*/
+/* clients start */
 
 .clients {
   background-color: #fff;
@@ -737,9 +791,9 @@ body {
   }
 }
 
-/* clients end*/
+/* clients end */
 
-/* interested start*/
+/* interested start */
 
 .interested {
 
