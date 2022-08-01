@@ -88,7 +88,7 @@ html, body {
 .header-container .logo__circle-blue {
   width: 32px;
   height: 32px;
-  z-index: 1;
+  z-index: 11;
   background-color: #316099;
   border: 2px solid #316099;
   border-radius: 50%;
@@ -97,7 +97,7 @@ html, body {
 .header-container .logo__circle-white {
   width: 32px;
   height: 32px;
-  z-index: 2;
+  z-index: 12;
   background-color: #fff;
   border: 2px solid #316099;
   border-radius: 50%;
@@ -106,7 +106,7 @@ html, body {
 
 .header-container .logo__letter {
   color: #316099;
-  z-index: 3;
+  z-index: 13;
   font-family: Gilroy Semibold;
   font-size: 2rem;
   position: absolute;
@@ -125,7 +125,6 @@ html, body {
 .header-container .header-menu .menu__body {
   width: 100%;
   background-color: #fff;
-  transition: left .3s;
   display: none;
   overflow: auto;
 }
@@ -168,8 +167,9 @@ html, body {
 
 @media screen and (max-width: 819px) {
   .header-container .header-menu .menu__body .menu__list {
+    z-index: 10;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
   }
 
@@ -177,6 +177,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    justify-content: center;
     padding: 90px 15px 30px;
     position: fixed;
     top: 0;
@@ -186,6 +187,7 @@ html, body {
 }
 
 .header-container .close-icon-menu, .header-container .icon-menu {
+  z-index: 11;
   height: 16px;
   width: 24px;
   flex-direction: column;
