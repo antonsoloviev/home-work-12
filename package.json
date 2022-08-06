@@ -4,14 +4,22 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "(parcel ./src/index.html) & parcel watch ./src/index.html",
+    "build": "parcel build --public-url ."
   },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2",
     "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "parcel-plugin-clean-easy": "^1.0.2"
   }
+  
 }
