@@ -944,12 +944,6 @@ html, body {
 
 @media screen and (max-width: 1024px) {
   .interested-wrapper-dark {
-    border-radius: 0 100px 0 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .interested-wrapper-dark {
     border-radius: 0 80px 0 0;
   }
 }

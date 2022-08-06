@@ -783,7 +783,6 @@ body {
   &-wrapper {
     background-color: #5A98D0;
     width: 1366px;
-    // display: flex;
 
     &-dark {
       background-color: $main-color;
@@ -791,13 +790,11 @@ body {
       width: 1270px;
 
       .container {
-
         display: flex;
         justify-content: flex-start;
         padding-top: 80px;
         max-width: 844px;
         align-items: center;
-        // margin: 0 auto;
 
         .text-block {
           display: flex;
@@ -876,10 +873,6 @@ body {
       }
 
       @media screen and (max-width: 1024px) {
-        border-radius: 0 100px 0 0;
-      }
-
-      @media screen and (max-width: 480px) {
         border-radius: 0 80px 0 0;
       }
     }
