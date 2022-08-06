@@ -397,9 +397,9 @@ body {
     padding-top: 180px;
 
     .grid-wrapper {
+      width: 100%;
       display: grid;
       grid-template-columns: 80px 1fr 1fr;
-      // grid-template-rows: 300px 1fr 1fr 1fr;
       grid-template-areas:
       "A A B"
       ". C B"
@@ -509,8 +509,6 @@ body {
 
       @media screen and (max-width: 1024px) {
         grid-template-columns: 150px 1fr 1fr;
-        padding-left: 15px;
-        padding-right: 15px;
       }
 
       @media screen and (max-width: 900px) {

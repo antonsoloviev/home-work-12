@@ -410,6 +410,7 @@ html, body {
 }
 
 .what-we-do .container .grid-wrapper {
+  width: 100%;
   grid-template-columns: 80px 1fr 1fr;
   grid-template-areas: "A A B"
                        ". C B"
@@ -528,8 +529,6 @@ html, body {
 @media screen and (max-width: 1024px) {
   .what-we-do .container .grid-wrapper {
     grid-template-columns: 150px 1fr 1fr;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
